@@ -160,9 +160,9 @@ function getConfigFields(adapter: AdapterMeta): ConfigField[] {
       fields.push({
         key: 'tavilyEndpointUrl',
         label: 'Endpoint URL',
-        placeholder: 'http://127.0.0.1:8096',
+        placeholder: 'http://127.0.0.1:8098',
         maskInput: false,
-        getValue: s => s.tavilyEndpointUrl ?? 'http://127.0.0.1:8096',
+        getValue: s => s.tavilyEndpointUrl ?? 'http://127.0.0.1:8098',
         setValue: (s, v) => ({ ...s, tavilyEndpointUrl: v || undefined }),
       });
       break;

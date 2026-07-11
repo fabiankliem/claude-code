@@ -1,6 +1,6 @@
 /**
  * Tavily-based search adapter — calls the Tavily Search API
- * (defaults to the on-box ccb-shim at http://127.0.0.1:8096) and maps
+ * (defaults to the on-box ccb-shim at http://127.0.0.1:8098) and maps
  * results to the unified SearchResult format.
  */
 
@@ -9,7 +9,7 @@ import { AbortError } from 'src/utils/errors.js'
 import { getSettings_DEPRECATED } from 'src/utils/settings/settings.js'
 import type { SearchResult, SearchOptions, WebSearchAdapter } from './types.js'
 
-const DEFAULT_TAVILY_SEARCH_URL = 'http://127.0.0.1:8096/search'
+const DEFAULT_TAVILY_SEARCH_URL = 'http://127.0.0.1:8098/search'
 const FETCH_TIMEOUT_MS = 30_000
 
 interface TavilySearchHit {

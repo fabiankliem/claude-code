@@ -3,7 +3,7 @@
  * Token/URL have hardcoded production defaults; env vars override for self-hosted deployments.
  */
 export const ARTIFACTS_DEFAULT_TOKEN = 'fagent-local'
-export const ARTIFACTS_DEFAULT_URL = 'http://127.0.0.1:8096'
+export const ARTIFACTS_DEFAULT_URL = 'http://127.0.0.1:8098'
 
 export function getArtifactsToken(): string {
   return process.env.CLAUDE_ARTIFACTS_TOKEN ?? ARTIFACTS_DEFAULT_TOKEN

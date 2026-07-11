@@ -680,7 +680,7 @@ export const SettingsSchema = lazySchema(() =>
         .string()
         .optional()
         .describe(
-          'Custom Tavily API endpoint URL. Defaults to http://127.0.0.1:8096. ' +
+          'Custom Tavily API endpoint URL. Defaults to http://127.0.0.1:8098. ' +
             'Used by both WebSearch and WebFetch when tavily adapter is selected.',
         ),
       braveApiKey: z
